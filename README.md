@@ -11,17 +11,7 @@ This project transforms high-volume operational data into interactive, actionabl
 
 ---
 
-## 📌 Table of Contents
-- Executive Summary
-- Dashboard Architecture
-- Technical Stack
-- Data Pipeline & Modeling
-- Calculated Measures (DAX Snippets)
-- Page-by-Page Visual Analysis
-- Business Impact & Recommendations
-- Repository Structure
-- Setup & Installation
-- Author & Contact
+
 
 ---
 
@@ -37,22 +27,6 @@ This project delivers a 7-page interactive dashboard containing over 300+ custom
 * Data Sources: SQL Database, Structured CSV/Excel Files
 * Key Analytical Domains: Order Logistics, Regional Revenue Split, Customer LTV, Inventory Turnover Ratio, Sentiment Analysis, Marketing ROI.
 
----
-
-## 📐 Dashboard Architecture
-
-The dashboard is structured into 7 dedicated modules:
-
-├── 1. Home                👉 Interactive Navigation & Hub Page
-├── 2. Overview            👉 High-Level Executive KPIs & Regional Split
-├── 3. Sales Overview      👉 Monthly Sales Trends, AOV & Product Categories
-├── 4. Customer            👉 Repeat Order Rates, LTV & Top Customer Rankings
-├── 5. Inventory           👉 Low-Stock Heatmaps, Tiers & Turnover Ratio
-├── 6. Feedbacks           👉 Sentiment Analysis & Customer Review Keywords
-└── 7. Marketing           👉 Campaign ROI & Channel Acquisition Breakdown
-
----
-
 ## 🛠️ Technical Stack
 
 * Business Intelligence: Power BI Desktop
@@ -63,28 +37,7 @@ The dashboard is structured into 7 dedicated modules:
 
 ---
 
-## 🗄️ Data Pipeline & Modeling
 
-### 1. Data Flow Architecture
-
-+--------------------+        +-----------------------+        +-----------------------+
-| Raw SQL / CSV Data |  --->  |   Power Query (ETL)   |  --->  | Star Schema Data Model|
-| (Orders, Stock)    |        | Clean, Transform, Type|        | (Fact & Dim Tables)   |
-+--------------------+        +-----------------------+        +-----------------------+
-                                                                           |
-                                                                           v
-                                                               +-----------------------+
-                                                               | Power BI Visuals      |
-                                                               | (300+ Visuals, DAX)   |
-                                                               +-----------------------+
-
-### 2. Star Schema Design
-The model follows an optimized Star Schema to ensure high-performance DAX evaluations:
-* Fact Tables: Fact_Orders, Fact_Inventory, Fact_Marketing
-* Dimension Tables: Dim_Date, Dim_Customer, Dim_Product, Dim_Region
-* Relationships: 1 to Many (Single-direction filtering) between Dimension and Fact tables.
-
----
 
 ## 🧮 Calculated Measures (DAX Snippets)
 
@@ -163,21 +116,6 @@ Evaluates ad spend performance across acquisition channels (Social, Search, Emai
 
 ---
 
-## 📁 Repository Structure
-
-blinkit-quick-commerce-dashboard/
-│
-├── Blinkit Dashboard - V1.pbix      # Main Power BI Report File
-├── Customer.png                     # Dashboard Screenshot
-├── Feedback.png                     # Dashboard Screenshot
-├── Home.png                         # Dashboard Screenshot
-├── Inventory.png                    # Dashboard Screenshot
-├── Marketing.png                    # Dashboard Screenshot
-├── Overview.png                     # Dashboard Screenshot
-├── Sales Overview.png               # Dashboard Screenshot
-└── README.md                        # Project Documentation
-
----
 
 ## ⚙️ Setup & Installation
 
