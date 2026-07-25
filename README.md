@@ -1,4 +1,4 @@
-#  Blinkit Quick-Commerce Analytics Dashboard
+# 🚀 Blinkit Quick-Commerce Analytics Dashboard
 
 ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![SQL](https://img.shields.io/badge/SQL-CC292B?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
@@ -118,31 +118,40 @@ DIVIDE(
 
 ## 🖼️ Page-by-Page Visual Analysis
 
-Note: Upload your page screenshots into a docs/images/ folder to display them here.
+### 1. Home / Landing Page
+Central navigation landing page linking all operational reporting pages with custom dynamic visuals.
 
-### 1. Overview Page
+![Home Page](./Home.png)
+
+### 2. Overview Page
 Macro-level performance summary displaying total orders, delivery completion rates, and regional revenue breakdown.
-![Overview Page](docs/images/overview.png)
 
-### 2. Sales Overview Page
+![Overview Page](./Overview.png)
+
+### 3. Sales Overview Page
 Tracks revenue performance across product categories, monthly sales seasonality, and Average Order Value (AOV) growth.
-![Sales Page](docs/images/sales.png)
 
-### 3. Customer Analytics Page
+![Sales Overview Page](./Sales%20Overview.png)
+
+### 4. Customer Analytics Page
 Monitors repeat order metrics, customer acquisition channels, and top revenue-generating customers.
-![Customer Page](docs/images/customer.png)
 
-### 4. Inventory Management Page
+![Customer Page](./Customer.png)
+
+### 5. Inventory Management Page
 Features stock level heatmaps, turnover ratios, and automated low-stock warnings to avoid dark-store stockouts.
-![Inventory Page](docs/images/inventory.png)
 
-### 5. Feedbacks & Sentiment Page
+![Inventory Page](./Inventory.png)
+
+### 6. Feedbacks & Sentiment Page
 Categorizes qualitative customer feedback (Positive, Neutral, Negative) and highlights common sentiment keywords.
-![Feedback Page](docs/images/feedbacks.png)
 
-### 6. Marketing ROI Page
+![Feedback Page](./Feedback.png)
+
+### 7. Marketing ROI Page
 Evaluates ad spend performance across acquisition channels (Social, Search, Email) and compares campaign ROI.
-![Marketing Page](docs/images/marketing.png)
+
+![Marketing Page](./Marketing.png)
 
 ---
 
@@ -158,21 +167,14 @@ Evaluates ad spend performance across acquisition channels (Social, Search, Emai
 
 blinkit-quick-commerce-dashboard/
 │
-├── data/                            # Sample datasets (CSV/Excel)
-│   ├── Blinkit_Orders.csv
-│   └── Blinkit_Inventory.xlsx
-│
-├── docs/                            # Screenshots & visual documentation
-│   └── images/
-│       ├── overview.png
-│       ├── sales.png
-│       ├── customer.png
-│       ├── inventory.png
-│       ├── feedbacks.png
-│       └── marketing.png
-│
 ├── Blinkit Dashboard - V1.pbix      # Main Power BI Report File
-├── LICENSE
+├── Customer.png                     # Dashboard Screenshot
+├── Feedback.png                     # Dashboard Screenshot
+├── Home.png                         # Dashboard Screenshot
+├── Inventory.png                    # Dashboard Screenshot
+├── Marketing.png                    # Dashboard Screenshot
+├── Overview.png                     # Dashboard Screenshot
+├── Sales Overview.png               # Dashboard Screenshot
 └── README.md                        # Project Documentation
 
 ---
@@ -184,7 +186,6 @@ blinkit-quick-commerce-dashboard/
 
 2. Download & View Dashboard:
    - Open Blinkit Dashboard - V1.pbix directly using Power BI Desktop.
-   - If re-linking local source files in Power Query, update the root file paths to match your local dataset location inside /data.
 
 ---
 
